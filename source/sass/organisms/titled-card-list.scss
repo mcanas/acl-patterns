@@ -1,0 +1,10 @@
+@import "variables";
+
+.titled-card-list {
+  padding: $spacer * 3 0;
+
+  &__title,
+  &__sub-title {
+    text-align: center;
+  }
+}

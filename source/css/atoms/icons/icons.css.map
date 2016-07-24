@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAA,KAAM;EACJ,OAAO,EAAE,YAAY;EACrB,IAAI,EAAE,YAAY;EAClB,KAAK,EAAE,OAAO;EACd,SAAS,EAAE,OAAO;EAClB,WAAW,EAAE,CAAC;EACd,MAAM,EAAE,GAAG;EACX,KAAK,EAAE,GAAG",
+"sources": ["../../../sass/atoms/icons/icons.scss"],
+"names": [],
+"file": "icons.css"
+}

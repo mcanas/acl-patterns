@@ -1,0 +1,22 @@
+@import "variables";
+
+.shortcut-nav {
+  background-color: $brand-primary;
+  margin-top: -($spacer * 6);
+
+  &__nav {
+    list-style: none;
+  }
+
+  &__item {
+  }
+
+  &__link {
+    display: block;
+
+    color: white;
+    font-size: $font-size-lg;
+    line-height: $spacer * 6;
+    text-align: center;
+  }
+}

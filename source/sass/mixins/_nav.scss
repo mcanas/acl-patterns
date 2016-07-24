@@ -1,0 +1,120 @@
+@import "variables";
+
+@mixin nav-link(
+  $color: $link-color,
+  $hover-color: $link-hover-color,
+  $disabled-link-color: $nav-disabled-link-color,
+  $disabled-link-hover-color: $nav-disabled-link-hover-color
+) {
+  color: $color;
+  display: inline-block;
+
+  @include hover-focus {
+    color: $hover-color;
+    text-decoration: none;
+  }
+
+  // Disabled state lightens text and removes hover/tab effects
+  &.disabled {
+    color: $disabled-link-color;
+
+    @include plain-hover-focus {
+      color: $disabled-link-hover-color;
+      cursor: $cursor-disabled;
+      background-color: transparent;
+    }
+  }
+}
+
+
+// // Navigation
+// //
+// // Custom navbar navigation built on the base `.nav` styles.
+//
+// .navbar-nav {
+//   .nav-item {
+//     float: left;
+//   }
+//
+//   .nav-link {
+//     display: block;
+//     padding-top:    .425rem;
+//     padding-bottom: .425rem;
+//
+//     + .nav-link {
+//       margin-left: 1rem;
+//     }
+//   }
+//
+//   .nav-item + .nav-item {
+//     margin-left: 1rem;
+//   }
+// }
+//
+// // Dark links against a light background
+// .navbar-light {
+//   .navbar-brand {
+//     color: $navbar-light-active-color;
+//
+//     @include hover-focus {
+//       color: $navbar-light-active-color;
+//     }
+//   }
+//
+//   .navbar-nav {
+//     .nav-link {
+//       color: $navbar-light-color;
+//
+//       @include hover-focus {
+//         color: $navbar-light-hover-color;
+//       }
+//     }
+//
+//     .open > .nav-link,
+//     .active > .nav-link,
+//     .nav-link.open,
+//     .nav-link.active {
+//       @include plain-hover-focus {
+//         color: $navbar-light-active-color;
+//       }
+//     }
+//   }
+//
+//   .navbar-divider {
+//     background-color: rgba(0,0,0,.075);
+//   }
+// }
+//
+// // White links against a dark background
+// .navbar-dark {
+//   .navbar-brand {
+//     color: $navbar-dark-active-color;
+//
+//     @include hover-focus {
+//       color: $navbar-dark-active-color;
+//     }
+//   }
+//
+//   .navbar-nav {
+//     .nav-link {
+//       color: $navbar-dark-color;
+//
+//       @include hover-focus {
+//         color: $navbar-dark-hover-color;
+//       }
+//     }
+//
+//     .open > .nav-link,
+//     .active > .nav-link,
+//     .nav-link.open,
+//     .nav-link.active {
+//       @include plain-hover-focus {
+//         color: $navbar-dark-active-color;
+//       }
+//     }
+//   }
+//
+//   .navbar-divider {
+//     background-color: rgba(255,255,255,.075);
+//   }
+// }

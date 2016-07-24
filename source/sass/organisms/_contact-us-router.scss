@@ -1,0 +1,39 @@
+.contact-us-router {
+  background-color: $gray-dark;
+  color: white;
+  padding: $spacer * 3 0;
+}
+
+.hq-contact-block {
+  border: 1px solid $gray-light;
+  border-radius: 3px;
+  padding: $spacer * .5;
+
+  &__flag {
+    display: inline-block;
+    width: 32px
+  }
+
+  &__phone {
+    color: white;
+  }
+
+  &__title {
+    color: $gray-light;
+    font-size: $font-size-xs;
+    font-weight: bold;
+    margin-bottom: 0;
+    text-transform: uppercase;
+  }
+}
+
+.intl-contact-list {
+  &__flag {
+    display: inline-block;
+    width: 32px
+  }
+
+  &__item {
+    display: inline-block;
+  }
+}

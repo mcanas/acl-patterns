@@ -1,0 +1,5 @@
+@each $breakpoint in map-keys($grid-breakpoints) {
+  .max-width-#{$breakpoint} {
+    max-width: map-get($grid-breakpoints, $breakpoint);
+  }
+}

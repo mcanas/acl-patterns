@@ -1,0 +1,23 @@
+@import "_variables";
+
+.blog-preview {
+  border-radius: 0;
+
+  &__image {
+    border-radius: 0;
+    display: inline-block;
+    width: 100%;
+  }
+
+  &__post-meta {
+    color: $gray-light;
+    font-size: $font-size-xs;
+  }
+
+  &__read-more {
+    color: $gray;
+    font-weight: bold;
+    text-align: right;
+  }
+
+}
