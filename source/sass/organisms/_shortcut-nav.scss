@@ -2,7 +2,10 @@
 
 .shortcut-nav {
   background-color: $brand-primary;
-  margin-top: -($spacer * 6);
+
+  @include media-breakpoint-up(md) {
+    margin-top: -($spacer * 6);
+  }
 
   &__nav {
     list-style: none;

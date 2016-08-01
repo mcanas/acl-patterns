@@ -1,0 +1,21 @@
+{
+  "name": "acl-patterns",
+  "private": true,
+  "scripts": {
+    "build:all": "npm run build:patterns && npm run build:sass",
+    "build:patterns": "npm run patternlab",
+    "build:sass": "npm run sass",
+    "docker:start": "docker-machine start default && eval $(docker-machine env) && docker-compose up -d",
+    "docker:stop": "docker-compose stop && docker-machine stop",
+    "patternlab": "php core/console --generate",
+    "start": "parallelshell 'npm run watch:css' 'npm run watch:patterns' 'npm run watch:sass' ",
+    "sass": "sass --update source/sass:source/css -I vendor/twbs/bootstrap/scss",
+    "watch:css": "onchange 'source/css/**/*.css' -- npm run build:patterns",
+    "watch:patterns": "onchange 'source/_patterns/**/*.twig' -- npm run build:patterns",
+    "watch:sass": "onchange 'source/sass/**/*.scss' -- npm run build:sass"
+  },
+  "devDependencies": {
+    "onchange": "^2.5.0",
+    "parallelshell": "^2.0.0"
+  }
+}

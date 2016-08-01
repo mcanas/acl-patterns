@@ -2,26 +2,37 @@
 @import "mixins/breakpoints";
 @import "mixins/nav";
 
-.site-navigation {
+.navbar--main {
   border: 1px solid $gray-lighter;
   border-radius: 0;
   padding: 0;
 }
 
-.site-navigation-brand {
+.navbar--main .navbar-brand {
   border-right: 1px solid $gray-lighter;
   padding: $spacer-y * .25 $spacer-x;
   margin-right: 0;
 }
 
-.site-navigation-nav {
+.collapse {
+  &--site-nav {
+    @include media-breakpoint-up(md) {
+      .site-nav__item:hover & {
+        display: block;
+        position: absolute;
+      }
+    }
+  }
+}
+
+.site-nav {
   &__item {
     border-right: 1px solid $gray-lighter;
 
-    .site-navigation-nav & { float: none; }
+    .site-nav & { float: none; }
 
     @include media-breakpoint-up(md) {
-        .site-navigation-nav & { float: left; }
+        .site-nav & { float: left; }
     };
 
     &.nav-item + .nav-item {
@@ -36,7 +47,7 @@
   }
 }
 
-.icon-list.icon-list--site-navigation {
+.icon-list.icon-list--site-nav {
   padding: .25rem 1rem;
 }
 
@@ -49,10 +60,16 @@
     border: 1px solid $gray-lighter;
     box-shadow: 3px 3px 1px rgba(0,0,0,.15);
 
-    .site-navigation-nav__item:hover & {
-      display: block;
-      position: absolute;
-    }
+    position: relative;
+    z-index: $zindex-navbar;
+  }
+
+  &--static {
+    background-color: $gray-lighter;
+    border-top: 3px solid $gray-light;
+    box-shadow: none;
+
+    position: static;
   }
 
   &__link {

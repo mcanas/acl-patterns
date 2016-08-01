@@ -1,6 +1,6 @@
 {
 "version": 3,
-"mappings": "AAEA,oBAAqB;EACnB,OAAO,EAAE,MAAa;EAEtB,4DACa;IACX,UAAU,EAAE,MAAM",
+"mappings": "AAEA,oBAAqB;EACnB,OAAO,EAAE,MAAa;EAEtB,4DACa;IACX,UAAU,EAAE,MAAM;EAGpB,+BAAa;IACX,aAAa,EAAE,IAAW",
 "sources": ["../../sass/organisms/titled-feature-list.scss"],
 "names": [],
 "file": "titled-feature-list.css"

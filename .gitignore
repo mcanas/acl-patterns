@@ -4,3 +4,4 @@ public/*
 source/styleguide/*
 vendor/*
 .sass-cache/*
+node_modules/*

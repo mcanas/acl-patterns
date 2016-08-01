@@ -1,6 +1,6 @@
 {
 "version": 3,
-"mappings": "AAEA,iBAAkB;EAChB,OAAO,EAAE,MAAa;EAEtB,sDACa;IACX,UAAU,EAAE,MAAM",
+"mappings": "AAEA,iBAAkB;EAChB,OAAO,EAAE,MAAa;EAEtB,sDACa;IACX,UAAU,EAAE,MAAM;EAGpB,4BAAa;IACX,aAAa,EAAE,IAAW",
 "sources": ["../../sass/organisms/titled-card-list.scss"],
 "names": [],
 "file": "titled-card-list.css"
